@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+         .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>complaint</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="../index.html">Home</a>
+        <a href="#news">Notice</a>
+        <a href="#contact">Guide</a>
+        
+
+        <div class="topnav-right " style="float: right">
+          <form action="" >
+            <input  style="width: 200px ; display: inline;background-color: white" type="text" placeholder="track your complaint">
+            <button style="background-color: palegreen;border-radius: 12px; padding: 17px;">search</button>
+          </form>
+          
+         
+        </div>
+      </div>
+    <div class="main">
+
+        <div class="container">
+            <h2>Write your complaint here.</h2>
+            <form method="POST" action="test_comp.php" id="signup-form" class="signup-form" enctype="multipart/form-data">
+                <h3>
+                    verify yourself
+                </h3>
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-file" style="visibility: hidden;">
+                            <input type="file" class="inputfile" name="your_picture" id="your_picture"  onchange="readURL(this);" data-multiple-caption="{count} files selected" multiple />
+                            <label for="your_picture">
+                                <figure>
+                                    <img src="images/your-picture.png" alt="" class="your_picture_image">
+                                </figure>
+                                <span class="file-button">choose picture</span>
+                            </label>
+                        </div>
+                        <div class="form-group-flex">
+                            <div class="form-group">
+                                <input type="text" name="a" id="" placeholder="Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="b" id="" placeholder="phone " />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" id="" placeholder="otp" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    complaint
+                </h3>
+                <fieldset>
+                    <label style="padding-bottom: 25px;" for="" class="label-radio">write here </label>
+                    <div class="form-row form-input-flex">
+                        <div class="form-input">
+                            <input type="text" name="city" id="city" placeholder="school code" />
+                           
+                        </div>
+                        <div class="form-input">
+                           
+                            <input type="text" name="city" id="city" placeholder="school name" />
+                        </div>
+                        
+                    </div>
+                    <div class="form-row form-input-flex">
+                        <div class="form-input">
+                            <select name="country" id="country">
+                                <option value="">facilities</option>
+                                <option value="Viet Nam">staff</option>
+                                <option value="USA">admission</option>
+                                <option value="USA">other</option>
+                            </select>
+                            <span class="select-icon"><i class="zmdi zmdi-caret-down"></i></span>
+                        </div>                         
+                    </div>
+                    <div class="form-row form-input-flex">
+                        <div class="form-input">
+                            <input type="text" name="city" id="city" placeholder="tells us more" />
+                           
+                        </div>
+                        
+                        
+                    </div>
+                   
+                </fieldset>
+
+                <h3>
+                    status
+                </h3>
+                <fieldset>
+                    <input type="submit">
+                    <label for="job" class="label-radio">your complaint has been raised. Your ticket no. is 3923213.</label>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
